@@ -53,6 +53,14 @@ app.get('/about', (req,res) => {
     });
 });
 
+app.get('/project', (req, res) => {
+        
+    res.render('project.hbs', {
+        pageTitle: 'Project Page',
+        message: 'Welcome to my project portfolio page.',
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         Error: 'This web page contains error.',
